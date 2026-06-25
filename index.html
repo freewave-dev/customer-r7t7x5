@@ -3,21 +3,306 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Site Coming Soon</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f1f5f9;color:#1C1F24;min-height:100vh;display:flex;align-items:center;justify-content:center}
-.card{text-align:center;background:#fff;border-radius:16px;padding:3rem 2.5rem;box-shadow:0 1px 3px rgba(0,0,0,.08);max-width:480px;margin:1rem}
-h1{font-size:1.5rem;margin-bottom:.5rem}
-p{color:#5F6B7A;line-height:1.6}
-.brand{color:#2EA8FF;font-weight:700}
-</style>
+<title>Chicaoji — Goji Berry, Cacao & Chipotle Hot Sauce</title>
+<meta name="description" content="A medium-heat hot sauce woven from three superfoods: chipotle, cacao, and goji. Organic, vegan, gluten-free. Food is medicine.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="card">
-<h1>Your site is being set up</h1>
-<p>We're getting everything ready for you. Check back soon!</p>
-<p style="margin-top:1.5rem;font-size:.85rem">Powered by <a href="https://freewave.dev" style="color:#2EA8FF;font-weight:700;text-decoration:none">Freewave.dev</a></p>
+
+<header class="site-header">
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"></span>
+      <span>Chicaoji</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="what-is-chicaoji.html">The Sauce</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Where to Buy →</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span>Crafted on Lopez Island since 2007</span>
+        <h1>A hot sauce <span class="accent">that makes good food</span> taste better.</h1>
+        <p class="hero-lede">
+          Medium heat. Deep flavor. Built from three superfoods —
+          smoky chipotle, raw cacao, and ruby goji berries — into a sauce that
+          weaves sweet, sour, salt, bitter, savory and spicy into a single drop.
+        </p>
+        <div class="hero-ctas">
+          <a href="what-is-chicaoji.html" class="btn btn-primary">Discover the Sauce <span class="btn-arrow">→</span></a>
+          <a href="recipes.html" class="btn btn-ghost">See Recipes</a>
+        </div>
+        <div class="hero-tags">
+          <span class="tag">Organic</span>
+          <span class="tag">Vegan</span>
+          <span class="tag">Gluten-Free</span>
+          <span class="tag">GMO-Free</span>
+          <span class="tag">Paleo &amp; Low-FODMAP</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="bottle-stage">
+          <div class="ingredient-orbit orb-1">Goji</div>
+          <div class="ingredient-orbit orb-2">Cacao</div>
+          <div class="ingredient-orbit orb-3">Chipotle</div>
+          <div class="bottle">
+            <div class="bottle-neck"></div>
+            <div class="bottle-body">
+              <div class="bottle-label">
+                <div class="label-mark">Chicaoji</div>
+                <div class="label-sub">Medium Heat</div>
+                <div class="label-divider"></div>
+                <div class="label-foot">Goji · Cacao · Chipotle</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item">Food is Medicine <span class="dot"></span></span>
+    <span class="marquee-item">Sweet · Sour · Salt · Bitter · Savory · Spicy <span class="dot"></span></span>
+    <span class="marquee-item">Three Superfoods, One Bottle <span class="dot"></span></span>
+    <span class="marquee-item">No Preservatives. Ever. <span class="dot"></span></span>
+    <span class="marquee-item">Made on Lopez Island, WA <span class="dot"></span></span>
+    <span class="marquee-item">Food is Medicine <span class="dot"></span></span>
+    <span class="marquee-item">Sweet · Sour · Salt · Bitter · Savory · Spicy <span class="dot"></span></span>
+    <span class="marquee-item">Three Superfoods, One Bottle <span class="dot"></span></span>
+    <span class="marquee-item">No Preservatives. Ever. <span class="dot"></span></span>
+    <span class="marquee-item">Made on Lopez Island, WA <span class="dot"></span></span>
+  </div>
 </div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="eyebrow-dot"></span>The Ingredients</span>
+      <h2>Three superfoods, woven into one sauce.</h2>
+      <p>Every bottle starts with three short, deliberate ingredients. The rest of the list is just the things that hold them together.</p>
+    </div>
+
+    <div class="ingredient-grid">
+      <article class="ingredient-card">
+        <div class="ingredient-circle chipotle"></div>
+        <div class="ing-meta">CHI · The Smoke</div>
+        <h3>Chipotle</h3>
+        <p>Slow-smoked jalapeño chilies bring the warm, woody heat that anchors the sauce — present, never punishing.</p>
+      </article>
+
+      <article class="ingredient-card">
+        <div class="ingredient-circle cacao"></div>
+        <div class="ing-meta">CAO · The Depth</div>
+        <h3>Cacao</h3>
+        <p>Raw cacao nibs add roasted bitterness and a quiet, complex finish — the reason Chicaoji belongs on dessert as much as dinner.</p>
+      </article>
+
+      <article class="ingredient-card">
+        <div class="ingredient-circle goji"></div>
+        <div class="ing-meta">JI · The Sweet</div>
+        <h3>Goji</h3>
+        <p>Ruby-red goji berries lend a natural sweetness and the antioxidant-rich body of one of the world's oldest tonic foods.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container">
+    <div class="flavor-grid">
+      <div class="flavor-wheel" aria-hidden="true">
+        <div class="wheel-bg"></div>
+        <div class="wheel-inner">
+          <span>Six</span>
+          <span>Tastes</span>
+        </div>
+        <div class="wheel-tag t1">Sweet</div>
+        <div class="wheel-tag t2">Spicy</div>
+        <div class="wheel-tag t3">Bitter</div>
+        <div class="wheel-tag t4">Savory</div>
+        <div class="wheel-tag t5">Salt</div>
+        <div class="wheel-tag t6">Sour</div>
+      </div>
+
+      <div class="flavor-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span>The Flavor Profile</span>
+        <h2>Every taste your tongue knows, in one bottle.</h2>
+        <p>Most hot sauces pick a lane — vinegary, fiery, or sweet. Chicaoji refuses. It draws on every taste your palate recognizes and braids them together so no single note overwhelms the others.</p>
+        <p>The result is a condiment that pairs with breakfast eggs and chocolate brownies, with hummus and grilled salmon, with the inside of a sandwich and the top of a salad.</p>
+        <p class="quote">"Chicaoji deliciously weaves together sweet, sour, salt, bitter, savory and spicy."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pronunciation">
+  <div class="container pronunciation-inner">
+    <div class="pron-eyebrow">Pronounced</div>
+    <div class="pron-word">Chick<span class="x"> · </span>OW<span class="x"> · </span>gee</div>
+    <div class="pron-say">The name is a portrait of the bottle.</div>
+    <div class="pron-formula">
+      <span>CHI<small style="font-weight:400;opacity:.7;">potle</small></span>
+      <span class="plus">+</span>
+      <span>ca<small style="font-weight:400;opacity:.7;">CAO</small></span>
+      <span class="plus">+</span>
+      <span>go<small style="font-weight:400;opacity:.7;">JI</small></span>
+      <span class="equals">=</span>
+      <span style="color:var(--chipotle);">Chicaoji</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="split-media">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200&q=80&auto=format&fit=crop" alt="A warm kitchen scene with fresh ingredients">
+        <div class="story-stamp">
+          <div class="since">Since 2007</div>
+          <div class="where">Lopez Island, WA</div>
+        </div>
+      </div>
+
+      <div class="split-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span>Our Story</span>
+        <h2>Born in a juice bar, guided by an idea.</h2>
+        <p class="story-quote">"<span class="em">Food is medicine.</span>" Chicaoji was built on that single principle — that what you eat is supposed to nourish you, not just fill you.</p>
+        <p>Created in the summer of 2007 by Randall Waugh with the community at the Vortex Juice Bar &amp; Cafe on Lopez Island, Washington, Chicaoji began as a question: could a hot sauce do more than just heat?</p>
+        <p>The answer is in every drop. Three superfoods. No preservatives, no flavorings, no colorings, no additives of any kind.</p>
+        <a href="about.html" class="btn btn-ghost" style="margin-top:14px;">Read the full story <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="badges-row">
+      <div class="badge"><div class="badge-icon">Org.</div><div class="badge-label">Organic</div></div>
+      <div class="badge"><div class="badge-icon">Vgn.</div><div class="badge-label">Vegan</div></div>
+      <div class="badge"><div class="badge-icon">GF</div><div class="badge-label">Gluten Free</div></div>
+      <div class="badge"><div class="badge-icon">non</div><div class="badge-label">GMO Free</div></div>
+      <div class="badge"><div class="badge-icon">Pal.</div><div class="badge-label">Paleo</div></div>
+      <div class="badge"><div class="badge-icon">Low</div><div class="badge-label">FODMAP</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="eyebrow-dot"></span>How to Use It</span>
+      <h2>Good on everything. Surprising on a few.</h2>
+      <p>Chicaoji works as a condiment and as an ingredient — equally at home glazing salmon and folding into brownies.</p>
+    </div>
+
+    <div class="recipe-grid">
+      <a href="recipes.html" class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=900&q=80&auto=format&fit=crop" alt="Glazed salmon with herbs">
+        <span class="number">01</span>
+        <div class="recipe-meta">
+          <span class="recipe-tag">Main</span>
+          <h3>Chicaoji Glazed Salmon</h3>
+        </div>
+      </a>
+
+      <a href="recipes.html" class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=900&q=80&auto=format&fit=crop" alt="Rich chocolate brownies">
+        <span class="number">02</span>
+        <div class="recipe-meta">
+          <span class="recipe-tag">Dessert</span>
+          <h3>Chicaoji Viva Brownies</h3>
+        </div>
+      </a>
+
+      <a href="recipes.html" class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1571197119282-7c4a2d3c5c46?w=900&q=80&auto=format&fit=crop" alt="Bowl of hummus with olive oil">
+        <span class="number">03</span>
+        <div class="recipe-meta">
+          <span class="recipe-tag">Snack</span>
+          <h3>Jon's Chicaoji Hummus</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="testimonial">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <blockquote>"It tastes like something a grandmother in three different countries invented together. We put it on eggs, in stew, on chocolate. There is no wrong place for this sauce."</blockquote>
+      <cite>— A devoted Chicaoji household</cite>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Bring Chicaoji to your table.</h2>
+      <p>Available in 5 oz, 12 oz, half-gallon growlers, and one-gallon jugs. Online ordering is open.</p>
+      <a href="contact.html" class="btn btn-primary">Find a Bottle <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"></span>
+          <span>Chicaoji</span>
+        </a>
+        <p>A goji berry, cacao and chipotle hot sauce made on Lopez Island, Washington. Food is medicine.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="what-is-chicaoji.html">The Sauce</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li>P.O. Box 691</li>
+          <li>Lopez Island, WA 98261</li>
+          <li>360-468-4372</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© Chicaoji · Waugh Enterprises LLC</span>
+      <span class="powered">Powered by <a href="https://freewave.dev">Freewave.dev</a></span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
