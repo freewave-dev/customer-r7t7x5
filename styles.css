@@ -1300,3 +1300,20 @@ p { color: var(--ink-soft); }
   .orb-1, .orb-3 { width: 80px; height: 80px; font-size: 0.7rem; }
   .orb-2 { width: 95px; height: 95px; font-size: 0.72rem; }
 }
+
+/* ── Real photography: ingredient circles + product lineup (added with real Chicaoji assets) ── */
+.ingredient-circle img{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;object-fit:cover;}
+
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:8px;}
+.product-card{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);transition:transform .4s ease,box-shadow .4s ease;text-align:center;display:flex;flex-direction:column;}
+.product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+.product-photo{aspect-ratio:1/1;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;}
+.product-photo img{width:100%;height:100%;object-fit:contain;padding:20px;transition:transform .6s ease;}
+.product-card:hover .product-photo img{transform:scale(1.05);}
+.product-body{padding:22px 20px 28px;flex:1;display:flex;flex-direction:column;}
+.product-body h3{font-family:var(--serif);font-style:italic;margin-bottom:8px;}
+.product-body .ing-meta{margin-bottom:12px;}
+.product-price{font-size:1.5rem;font-weight:700;color:var(--chipotle);font-family:var(--serif);margin-top:auto;}
+.product-price .oos{display:block;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:8px;}
+.product-note{color:var(--muted);font-size:.92rem;line-height:1.5;margin-bottom:14px;}
+@media(max-width:760px){.product-grid{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto;}}
