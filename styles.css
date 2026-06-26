@@ -1420,3 +1420,18 @@ p { color: var(--ink-soft); }
 .tcard blockquote { font-family: var(--serif); font-style: italic; font-size: 1.15rem; line-height: 1.5; color: var(--cream); margin-bottom: 18px; flex: 1; }
 .tcard figcaption { color: rgba(251, 248, 242, 0.6); font-size: .82rem; letter-spacing: .06em; text-transform: uppercase; }
 @media (max-width: 860px) { .testimonial-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
+
+/* ── Trust strip under the hero (social proof + reassurance at the decision point) ── */
+.trust-bar { background: var(--cacao); color: var(--cream); }
+.trust-inner {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 12px 26px; max-width: var(--container); margin: 0 auto; padding: 18px 32px;
+}
+.trust-item {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: .82rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+  color: rgba(251, 248, 242, 0.88);
+}
+.trust-item .stars { color: var(--goji); letter-spacing: 2px; }
+.trust-dot { width: 5px; height: 5px; border-radius: 50%; background: rgba(251, 248, 242, 0.3); }
+@media (max-width: 680px) { .trust-dot { display: none; } .trust-inner { gap: 10px 18px; padding: 16px 20px; } }
