@@ -9,7 +9,7 @@
   --chipotle: #BE4A2C;
   --chipotle-deep: #9C3A1C;
   --goji: #B07C2C;
-  --cacao: #2E333A;
+  --cacao: #2C2622;
   --cacao-soft: #523C44;
   --olive: #5D6130;
   --teal: #64808A;
@@ -1055,7 +1055,7 @@ p { color: var(--ink-soft); }
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: var(--ink);
+  background: var(--cacao);
   color: rgba(251, 248, 242, 0.75);
   padding: 80px 0 32px;
   font-size: 0.95rem;
@@ -1336,3 +1336,7 @@ p { color: var(--ink-soft); }
 .product-buy { width: 100%; justify-content: center; margin-top: 18px; }
 .product-buy[disabled] { opacity: .5; cursor: not-allowed; box-shadow: none; }
 .product-buy[disabled]:hover { transform: none; background: transparent; color: var(--ink); }
+
+/* ── Section rhythm: alternating warm bands so the page isn't one flat tan field ── */
+.section-light { background: #FCF9F4; }   /* bright near-white — airy, text/visual sections */
+.section-sand  { background: #E8DECA; }   /* deeper warm sand — makes light cards pop more */
