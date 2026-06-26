@@ -1371,3 +1371,52 @@ p { color: var(--ink-soft); }
 .blog-card:hover .blog-meta .read { text-decoration: underline; }
 @media (max-width: 900px) { .blog-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .blog-grid { grid-template-columns: 1fr; } }
+
+/* ── Progressive disclosure: "read more" expander + accordion (keeps depth off the scroll) ── */
+.disclose { margin: 6px 0 18px; }
+.disclose > summary {
+  list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+  color: var(--chipotle); font-weight: 600; font-size: .95rem; padding: 8px 0;
+}
+.disclose > summary::-webkit-details-marker { display: none; }
+.disclose > summary::after { content: "\25be"; transition: transform .3s ease; }
+.disclose[open] > summary::after { transform: rotate(180deg); }
+.disclose-body { padding-top: 6px; }
+.disclose-body p { margin-bottom: 12px; }
+
+.accordion { max-width: 820px; margin: 0 auto; border-top: 1px solid var(--line); }
+.acc { border-bottom: 1px solid var(--line); }
+.acc > summary {
+  list-style: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 26px 6px;
+  font-family: var(--serif); font-style: italic; font-size: 1.3rem; color: var(--ink);
+  transition: color .2s ease;
+}
+.acc > summary:hover { color: var(--chipotle); }
+.acc > summary::-webkit-details-marker { display: none; }
+.acc > summary::after {
+  content: "+"; font-family: var(--sans); font-style: normal; font-size: 1.7rem;
+  color: var(--chipotle); line-height: 1; transition: transform .3s ease;
+}
+.acc[open] > summary::after { content: "\2013"; }
+.acc-body { padding: 0 6px 30px; color: var(--ink-soft); line-height: 1.7; max-width: 72ch; }
+.acc-body p { margin-bottom: 12px; }
+.nutri { display: grid; grid-template-columns: 1fr auto; gap: 9px 24px; max-width: 380px; margin-bottom: 16px; }
+.nutri dt { color: var(--ink); font-weight: 500; }
+.nutri dd { color: var(--muted); text-align: right; }
+
+/* ── Testimonials grid (social proof, no JS) ── */
+.testimonial-head { text-align: center; margin-bottom: 48px; }
+.testimonial-head .stars { color: var(--goji); letter-spacing: 6px; font-size: 1.1rem; margin-bottom: 16px; }
+.testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.tcard {
+  background: rgba(251, 248, 242, 0.05);
+  border: 1px solid rgba(251, 248, 242, 0.14);
+  border-radius: var(--radius); padding: 30px 28px;
+  display: flex; flex-direction: column;
+}
+.tcard .stars { color: var(--goji); letter-spacing: 3px; font-size: .9rem; margin-bottom: 14px; }
+.tcard blockquote { font-family: var(--serif); font-style: italic; font-size: 1.15rem; line-height: 1.5; color: var(--cream); margin-bottom: 18px; flex: 1; }
+.tcard figcaption { color: rgba(251, 248, 242, 0.6); font-size: .82rem; letter-spacing: .06em; text-transform: uppercase; }
+@media (max-width: 860px) { .testimonial-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
